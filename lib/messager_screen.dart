@@ -3,8 +3,6 @@
 import 'package:flutter/material.dart';
 
 class MessengerScreen extends StatelessWidget {
-  const MessengerScreen({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -14,10 +12,13 @@ class MessengerScreen extends StatelessWidget {
         title: Row(
           children: [
             CircleAvatar(),
-            Text("MessengerScreen"),
+            SizedBox(width: 20.0),
+            Text(
+              "Chat",
+              style: TextStyle(fontSize: 20, color: Colors.black87),
+            ),
           ],
         ),
-
       ),
     );
   }

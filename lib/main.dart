@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'messager_screen.dart';
 
 void main() => runApp(MyApp());
