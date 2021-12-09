@@ -50,6 +50,9 @@ class MessengerScreen extends StatelessWidget {
           ),
         ],
       ),
+      body: Column(
+
+      ),
     );
   }
 }
