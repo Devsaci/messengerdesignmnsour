@@ -21,10 +21,20 @@ class MessengerScreen extends StatelessWidget {
               "Chat",
               style: TextStyle(fontSize: 20, color: Colors.black87),
             ),
-
           ],
         ),
-        actions: [],
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: CircleAvatar(
+              child: Icon(
+                Icons.camera,
+                color: Colors.green,
+                size: 30.0,
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
