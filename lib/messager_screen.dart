@@ -12,16 +12,19 @@ class MessengerScreen extends StatelessWidget {
         title: Row(
           children: [
             CircleAvatar(
-              radius: 20,
-              backgroundImage: NetworkImage("https://avatars.githubusercontent.com/u/46720185?s=400&u=1448d38406436f4c8ababbe8811bd691e9488489&v=4"),
+              radius: 25,
+              backgroundImage: NetworkImage(
+                  "https://avatars.githubusercontent.com/u/46720185?s=400&u=1448d38406436f4c8ababbe8811bd691e9488489&v=4"),
             ),
-            SizedBox(width: 30.0),
+            SizedBox(width: 15.0),
             Text(
               "Chat",
               style: TextStyle(fontSize: 20, color: Colors.black87),
             ),
+
           ],
         ),
+        actions: [],
       ),
     );
   }
