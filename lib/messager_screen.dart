@@ -51,7 +51,18 @@ class MessengerScreen extends StatelessWidget {
         ],
       ),
       body: Column(
-
+          children: [
+            Row(
+              children: [
+                Icon(
+                  Icons.search,
+                  color: Colors.black,
+                  size: 50.0,
+                ),
+                Text("Search", style: TextStyle(fontSize: 20,color: Colors.black),),
+              ],
+            ),
+          ],
       ),
     );
   }
