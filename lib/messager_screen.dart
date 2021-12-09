@@ -59,6 +59,7 @@ class MessengerScreen extends StatelessWidget {
                   color: Colors.black,
                   size: 50.0,
                 ),
+                SizedBox(width: 15,),
                 Text("Search", style: TextStyle(fontSize: 20,color: Colors.black),),
               ],
             ),
