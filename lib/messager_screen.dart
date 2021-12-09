@@ -27,10 +27,12 @@ class MessengerScreen extends StatelessWidget {
           IconButton(
             onPressed: () {},
             icon: CircleAvatar(
+              radius: 30,
+              backgroundColor: Colors.black,
               child: Icon(
-                Icons.camera,
+                Icons.camera_alt,
                 color: Colors.green,
-                size: 30.0,
+                size: 25.0,
               ),
             ),
           ),
