@@ -52,16 +52,22 @@ class MessengerScreen extends StatelessWidget {
       ),
       body: Column(
           children: [
-            Row(
-              children: [
-                Icon(
-                  Icons.search,
-                  color: Colors.black,
-                  size: 50.0,
-                ),
-                SizedBox(width: 15,),
-                Text("Search", style: TextStyle(fontSize: 20,color: Colors.black),),
-              ],
+            Container(
+              decoration : BoxDecoration(
+                borderRadius: BorderRadius.circular(20.0),
+                color: Colors.grey[300],
+              ),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.search,
+                    color: Colors.black,
+                    size: 50.0,
+                  ),
+                  SizedBox(width: 15,),
+                  Text("Search", style: TextStyle(fontSize: 20,color: Colors.black),),
+                ],
+              ),
             ),
           ],
       ),
