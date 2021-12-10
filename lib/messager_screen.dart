@@ -74,6 +74,7 @@ class MessengerScreen extends StatelessWidget {
                   ],
                 ),
               ),
+              SizedBox(height:  20.0),
               Column(
                 children: [
                   CircleAvatar(
