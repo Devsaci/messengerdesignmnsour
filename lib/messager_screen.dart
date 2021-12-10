@@ -9,6 +9,7 @@ class MessengerScreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 10,
+        titleSpacing: 20,
         title: Row(
           children: [
             CircleAvatar(
@@ -50,26 +51,29 @@ class MessengerScreen extends StatelessWidget {
           ),
         ],
       ),
-      body: Column(
-          children: [
-            Container(
-              decoration : BoxDecoration(
-                borderRadius: BorderRadius.circular(20.0),
-                color: Colors.grey[300],
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Column(
+            children: [
+              Container(
+                decoration : BoxDecoration(
+                  borderRadius: BorderRadius.circular(20.0),
+                  color: Colors.grey[300],
+                ),
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.search,
+                      color: Colors.black,
+                      size: 50.0,
+                    ),
+                    SizedBox(width: 15,),
+                    Text("Search", style: TextStyle(fontSize: 20,color: Colors.black),),
+                  ],
+                ),
               ),
-              child: Row(
-                children: [
-                  Icon(
-                    Icons.search,
-                    color: Colors.black,
-                    size: 50.0,
-                  ),
-                  SizedBox(width: 15,),
-                  Text("Search", style: TextStyle(fontSize: 20,color: Colors.black),),
-                ],
-              ),
-            ),
-          ],
+            ],
+        ),
       ),
     );
   }
