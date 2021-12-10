@@ -56,6 +56,7 @@ class MessengerScreen extends StatelessWidget {
         child: Column(
             children: [
               Container(
+                padding: EdgeInsets.all(10),
                 decoration : BoxDecoration(
                   borderRadius: BorderRadius.circular(20.0),
                   color: Colors.grey[300],
