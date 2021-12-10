@@ -56,7 +56,7 @@ class MessengerScreen extends StatelessWidget {
         child: Column(
             children: [
               Container(
-                padding: EdgeInsets.all(10),
+                padding: EdgeInsets.all(5),
                 decoration : BoxDecoration(
                   borderRadius: BorderRadius.circular(20.0),
                   color: Colors.grey[300],
@@ -72,6 +72,15 @@ class MessengerScreen extends StatelessWidget {
                     Text("Search", style: TextStyle(fontSize: 20,color: Colors.black),),
                   ],
                 ),
+              ),
+              Column(
+                children: [
+                  CircleAvatar(
+                    radius: 25,
+                    backgroundImage: NetworkImage(
+                        "https://avatars.githubusercontent.com/u/46720185?s=400&u=1448d38406436f4c8ababbe8811bd691e9488489&v=4"),
+                  ),
+                ],
               ),
             ],
         ),
