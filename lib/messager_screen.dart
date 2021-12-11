@@ -84,37 +84,40 @@ class MessengerScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20.0),
-            Column(
-              children: [
-                Stack(
-                  alignment: AlignmentDirectional.bottomEnd,
-                  children: [
-                    CircleAvatar(
-                      radius: 20,
-                      backgroundImage: NetworkImage(
-                          "https://avatars.githubusercontent.com/u/46720185?s=400&u=1448d38406436f4c8ababbe8811bd691e9488489&v=4"),
-                    ),
-                    Padding(
-                      padding: const EdgeInsetsDirectional.only(
-                        bottom: 3,
-                        end: 3,
+            Container(
+              width: 60,
+              child: Column(
+                children: [
+                  Stack(
+                    alignment: AlignmentDirectional.bottomEnd,
+                    children: [
+                      CircleAvatar(
+                        radius: 30,
+                        backgroundImage: NetworkImage(
+                            "https://avatars.githubusercontent.com/u/46720185?s=400&u=1448d38406436f4c8ababbe8811bd691e9488489&v=4"),
                       ),
-                      child: CircleAvatar(
-                        radius: 7,
-                        backgroundColor: Colors.redAccent,
+                      Padding(
+                        padding: const EdgeInsetsDirectional.only(
+                          bottom: 3,
+                          end: 3,
+                        ),
+                        child: CircleAvatar(
+                          radius: 7,
+                          backgroundColor: Colors.redAccent,
+                        ),
                       ),
-                    ),
-                  ],
-                ),
-                SizedBox(height: 6.0),
-                Text(
-                  "SACI Zakaria",
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: 10,
+                    ],
                   ),
-                ),
-              ],
+                  SizedBox(height: 6.0),
+                  Text(
+                    "SACI Zakaria",
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 10,
+                    ),
+                  ),
+                ],
+              ),
             ),
           ],
         ),
