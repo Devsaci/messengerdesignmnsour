@@ -1,6 +1,5 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-
 import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
@@ -309,7 +308,9 @@ class MessengerScreen extends StatelessWidget {
                     ),
                   ],
                 ),
-                SizedBox(width: 10,),
+                SizedBox(
+                  width: 10,
+                ),
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -325,25 +326,27 @@ class MessengerScreen extends StatelessWidget {
                     Row(
                       children: [
                         Text(
-                          "Message",
+                          "Message Message Message Message",
                           style: TextStyle(
                             color: Colors.black,
-                            fontSize: 10,
+                            fontSize: 15,
                           ),
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
                         ),
-                        SizedBox(width: 5,),
-                        Container(
-                          height: 10.0,
-                          width: 10.0,
-                          decoration: BoxDecoration(
-                            color: Colors.black,
-                            shape: BoxShape.circle,
+                        Padding(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 8.0, vertical: 8.0),
+                          child: Container(
+                            height: 10.0,
+                            width: 10.0,
+                            decoration: BoxDecoration(
+                              color: Colors.black,
+                              shape: BoxShape.circle,
+                            ),
                           ),
                         ),
-
-                        Text("data"),
+                        Text("12 : 00 PM"),
                       ],
                     ),
                   ],
