@@ -327,14 +327,16 @@ class MessengerScreen extends StatelessWidget {
                       SizedBox(height: 10,),
                       Row(
                         children: [
-                          Text(
-                            "Message Message Message Message",
-                            style: TextStyle(
-                              color: Colors.black,
-                              fontSize: 15,
+                          Expanded(
+                            child: Text(
+                              "Message Message Message Message",
+                              style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 15,
+                              ),
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
                             ),
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
                           ),
                           Padding(
                             padding: const EdgeInsets.symmetric(
