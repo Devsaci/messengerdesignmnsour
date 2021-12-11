@@ -110,11 +110,13 @@ class MessengerScreen extends StatelessWidget {
                   ),
                   SizedBox(height: 6.0),
                   Text(
-                    "SACI Zakaria",
+                    "SACI Zakaria SACI Zakaria",
                     style: TextStyle(
                       color: Colors.black,
                       fontSize: 10,
                     ),
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
                   ),
                 ],
               ),
