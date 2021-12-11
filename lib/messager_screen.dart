@@ -311,45 +311,48 @@ class MessengerScreen extends StatelessWidget {
                 SizedBox(
                   width: 10,
                 ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      "SACI Zakaria",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 10,
-                      ),
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
-                    ),
-                    Row(
-                      children: [
-                        Text(
-                          "Message Message Message Message",
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 15,
-                          ),
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "SACI Zakaria",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 10,
                         ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 8.0, vertical: 8.0),
-                          child: Container(
-                            height: 10.0,
-                            width: 10.0,
-                            decoration: BoxDecoration(
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                      SizedBox(height: 10,),
+                      Row(
+                        children: [
+                          Text(
+                            "Message Message Message Message",
+                            style: TextStyle(
                               color: Colors.black,
-                              shape: BoxShape.circle,
+                              fontSize: 15,
+                            ),
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(
+                                horizontal: 8.0, vertical: 8.0),
+                            child: Container(
+                              height: 10.0,
+                              width: 10.0,
+                              decoration: BoxDecoration(
+                                color: Colors.black,
+                                shape: BoxShape.circle,
+                              ),
                             ),
                           ),
-                        ),
-                        Text("12 : 00 PM"),
-                      ],
-                    ),
-                  ],
+                          Text("12 : 00 PM"),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
