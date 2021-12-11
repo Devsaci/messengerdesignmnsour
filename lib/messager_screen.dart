@@ -55,36 +55,45 @@ class MessengerScreen extends StatelessWidget {
         padding: const EdgeInsets.all(20.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                padding: EdgeInsets.all(5),
-                decoration : BoxDecoration(
-                  borderRadius: BorderRadius.circular(20.0),
-                  color: Colors.grey[300],
-                ),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.search,
-                      color: Colors.black,
-                      size: 50.0,
-                    ),
-                    SizedBox(width: 15,),
-                    Text("Search", style: TextStyle(fontSize: 20,color: Colors.black),),
-                  ],
-                ),
+          children: [
+            Container(
+              padding: EdgeInsets.all(5),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20.0),
+                color: Colors.grey[300],
               ),
-              SizedBox(height:  20.0),
-              Column(
+              child: Row(
                 children: [
-                  CircleAvatar(
-                    radius: 25,
-                    backgroundImage: NetworkImage(
-                        "https://avatars.githubusercontent.com/u/46720185?s=400&u=1448d38406436f4c8ababbe8811bd691e9488489&v=4"),
+                  Icon(
+                    Icons.search,
+                    color: Colors.black,
+                    size: 50.0,
+                  ),
+                  SizedBox(
+                    width: 15,
+                  ),
+                  Text(
+                    "Search",
+                    style: TextStyle(fontSize: 20, color: Colors.black),
                   ),
                 ],
               ),
-            ],
+            ),
+            SizedBox(height: 20.0),
+            Column(
+              children: [
+                Stack(
+                  children: [
+                    CircleAvatar(
+                      radius: 25,
+                      backgroundImage: NetworkImage(
+                          "https://avatars.githubusercontent.com/u/46720185?s=400&u=1448d38406436f4c8ababbe8811bd691e9488489&v=4"),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ],
         ),
       ),
     );
