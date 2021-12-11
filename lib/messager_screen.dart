@@ -288,7 +288,26 @@ class MessengerScreen extends StatelessWidget {
             SizedBox(height: 20.0),
             Row(
               children: [
-                CircleAvatar(),
+                Stack(
+                  alignment: AlignmentDirectional.bottomEnd,
+                  children: [
+                    CircleAvatar(
+                      radius: 30,
+                      backgroundImage: NetworkImage(
+                          "https://avatars.githubusercontent.com/u/46720185?s=400&u=1448d38406436f4c8ababbe8811bd691e9488489&v=4"),
+                    ),
+                    Padding(
+                      padding: const EdgeInsetsDirectional.only(
+                        bottom: 3,
+                        end: 3,
+                      ),
+                      child: CircleAvatar(
+                        radius: 7,
+                        backgroundColor: Colors.redAccent,
+                      ),
+                    ),
+                  ],
+                ),
                 SizedBox(width: 10,),
                 Column(
                   children: [
