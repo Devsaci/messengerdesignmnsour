@@ -5,6 +5,7 @@ import 'dart:ui';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:flutter/widgets.dart';
 
 class MessengerScreen extends StatelessWidget {
@@ -332,7 +333,16 @@ class MessengerScreen extends StatelessWidget {
                           maxLines: 2,
                           overflow: TextOverflow.ellipsis,
                         ),
-                        SizedBox(width: 10,),
+                        SizedBox(width: 5,),
+                        Container(
+                          height: 10.0,
+                          width: 10.0,
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+
                         Text("data"),
                       ],
                     ),
