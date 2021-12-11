@@ -91,13 +91,15 @@ class MessengerScreen extends StatelessWidget {
                       backgroundImage: NetworkImage(
                           "https://avatars.githubusercontent.com/u/46720185?s=400&u=1448d38406436f4c8ababbe8811bd691e9488489&v=4"),
                     ),
-                    CircleAvatar(
-                      radius: 10,
-                      backgroundColor: Colors.yellow,
-                    ),
-                    CircleAvatar(
-                      radius: 7,
-                      backgroundColor: Colors.redAccent,
+                    Padding(
+                      padding: const EdgeInsetsDirectional.only(
+                        bottom: 3,
+                        end: 3,
+                      ),
+                      child: CircleAvatar(
+                        radius: 7,
+                        backgroundColor: Colors.redAccent,
+                      ),
                     ),
                   ],
                 ),
