@@ -11,6 +11,7 @@ class MessengerScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // Image /Chat / Icon Camera , edit
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 10,
@@ -61,6 +62,7 @@ class MessengerScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            // Icon Serch , Txt Scherch
             Container(
               padding: EdgeInsets.all(5),
               decoration: BoxDecoration(
@@ -85,6 +87,7 @@ class MessengerScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20.0),
+            // Image /TXT /
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
@@ -280,6 +283,26 @@ class MessengerScreen extends StatelessWidget {
                   ),
                 ],
               ),
+            ),
+            // squelet
+            SizedBox(height: 20.0),
+            Row(
+              children: [
+                CircleAvatar(),
+                SizedBox(width: 10,),
+                Column(
+                  children: [
+                    Text("data"),
+                    Row(
+                      children: [
+                        Text("data"),
+                        SizedBox(width: 10,),
+                        Text("data"),
+                      ],
+                    ),
+                  ],
+                ),
+              ],
             ),
           ],
         ),
