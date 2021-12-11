@@ -310,11 +310,28 @@ class MessengerScreen extends StatelessWidget {
                 ),
                 SizedBox(width: 10,),
                 Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text("data"),
+                    Text(
+                      "SACI Zakaria",
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 10,
+                      ),
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                    ),
                     Row(
                       children: [
-                        Text("data"),
+                        Text(
+                          "Message",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 10,
+                          ),
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                        ),
                         SizedBox(width: 10,),
                         Text("data"),
                       ],
