@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class MessengerScreen extends StatelessWidget {
   @override
@@ -83,6 +84,7 @@ class MessengerScreen extends StatelessWidget {
             Column(
               children: [
                 Stack(
+                  alignment: AlignmentDirectional.bottomEnd,
                   children: [
                     CircleAvatar(
                       radius: 25,
